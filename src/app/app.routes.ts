@@ -16,13 +16,14 @@
  */
 
 import { Routes } from '@angular/router';
-import { AuthGuard, AboutComponent } from '@alfresco/adf-core';
+// import { AuthGuard, AboutComponent } from '@alfresco/adf-core';
+import { AboutComponent } from '@alfresco/adf-core';
 import { AppLayoutComponent } from './app/app-layout/app-layout.component';
 import { AppLoginComponent } from './app/app-login/app-login.component';
 import { projectEditorRoutes } from './project-editor/router/project-editor.routes';
 import { HostSettingsComponent } from './app/host-settings/host-settings.component';
-import { AmaLocalStorageMergeGuard } from './common/services/ama-localstorage-merge-guard.service';
-import { AmaRoleGuard } from './ama-role-guard.service';
+// import { AmaLocalStorageMergeGuard } from './common/services/ama-localstorage-merge-guard.service';
+// import { AmaRoleGuard } from './ama-role-guard.service';
 
 export const appRoutes: Routes = [
     { path: 'login', component: AppLoginComponent },
@@ -31,7 +32,8 @@ export const appRoutes: Routes = [
     {
         path: '',
         component: AppLayoutComponent,
-        canActivate: [ AuthGuard, AmaRoleGuard, AmaLocalStorageMergeGuard ],
+        // canActivate: [ AuthGuard, AmaRoleGuard, AmaLocalStorageMergeGuard ],
+        canActivate: [  ],
         children: [
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             // Impossible to lazily load ADF modules, that is why the hack

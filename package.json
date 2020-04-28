@@ -144,14 +144,15 @@
     "ngrx-store-freeze": "0.2.4",
     "ngx-moment": "3.3.0",
     "ngx-monaco-editor": "6.0.0",
+    "node-sass": "^4.14.0",
     "pdfjs-dist": "2.0.943",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.4.0",
+    "unzipper": "0.9.11",
     "uuid": "3.3.2",
     "web-animations-js": "2.3.1",
     "xml-js": "1.6.8",
-    "zone.js": "0.8.29",
-    "unzipper": "0.9.11"
+    "zone.js": "0.8.29"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",

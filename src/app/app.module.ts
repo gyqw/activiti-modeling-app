@@ -64,7 +64,7 @@ import { RouterModule } from '@angular/router';
 
         ACMApiModule.forRoot(),
 
-        RouterModule.forRoot(appRoutes),
+        RouterModule.forRoot(appRoutes, { useHash: true }),
 
         ProjectEditorModule,
         ProcessEditorModule,
